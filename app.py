@@ -21,8 +21,8 @@ body = random.choice(body_list)
 em = EmailMessage()
 em['From'] = email_sender
 em['To'] = email_receiver
-em['Subject'] = body
-em.set_content(" ")
+em['Subject'] = ""
+em.set_content(body)
 
 context = ssl.create_default_context()
 
